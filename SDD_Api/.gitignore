@@ -1,0 +1,17 @@
+## Build outputs
+bin/
+obj/
+
+## Configurações sensíveis (connection strings, senhas)
+appsettings.json
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Windows
+Thumbs.db
+desktop.ini

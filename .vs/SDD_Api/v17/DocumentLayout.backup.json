@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ti_davi\\source\\repos\\SDD_Api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BF3CFAE7-A753-464D-9E1C-E01A4A949536}|SDD_Api\\SDD_Api.csproj|c:\\users\\ti_davi\\source\\repos\\sdd_api\\sdd_api\\infrastructure\\dbaccess\\connectiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF3CFAE7-A753-464D-9E1C-E01A4A949536}|SDD_Api\\SDD_Api.csproj|solutionrelative:sdd_api\\infrastructure\\dbaccess\\connectiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF3CFAE7-A753-464D-9E1C-E01A4A949536}|SDD_Api\\SDD_Api.csproj|c:\\users\\ti_davi\\source\\repos\\sdd_api\\sdd_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BF3CFAE7-A753-464D-9E1C-E01A4A949536}|SDD_Api\\SDD_Api.csproj|solutionrelative:sdd_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF3CFAE7-A753-464D-9E1C-E01A4A949536}|SDD_Api\\SDD_Api.csproj|c:\\users\\ti_davi\\source\\repos\\sdd_api\\sdd_api\\service\\chradm_001_service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF3CFAE7-A753-464D-9E1C-E01A4A949536}|SDD_Api\\SDD_Api.csproj|solutionrelative:sdd_api\\service\\chradm_001_service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF3CFAE7-A753-464D-9E1C-E01A4A949536}|SDD_Api\\SDD_Api.csproj|c:\\users\\ti_davi\\source\\repos\\sdd_api\\sdd_api\\models\\chradm_001_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF3CFAE7-A753-464D-9E1C-E01A4A949536}|SDD_Api\\SDD_Api.csproj|solutionrelative:sdd_api\\models\\chradm_001_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF3CFAE7-A753-464D-9E1C-E01A4A949536}|SDD_Api\\SDD_Api.csproj|c:\\users\\ti_davi\\source\\repos\\sdd_api\\sdd_api\\controllers\\sdd_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF3CFAE7-A753-464D-9E1C-E01A4A949536}|SDD_Api\\SDD_Api.csproj|solutionrelative:sdd_api\\controllers\\sdd_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF3CFAE7-A753-464D-9E1C-E01A4A949536}|SDD_Api\\SDD_Api.csproj|c:\\users\\ti_davi\\source\\repos\\sdd_api\\sdd_api\\infrastructure\\procedures\\chradm_001_pkg .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF3CFAE7-A753-464D-9E1C-E01A4A949536}|SDD_Api\\SDD_Api.csproj|solutionrelative:sdd_api\\infrastructure\\procedures\\chradm_001_pkg .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "chradm_001_pkg .cs",
+              "DocumentMoniker": "C:\\Users\\ti_davi\\source\\repos\\SDD_Api\\SDD_Api\\Infrastructure\\Procedures\\chradm_001_pkg .cs",
+              "RelativeDocumentMoniker": "SDD_Api\\Infrastructure\\Procedures\\chradm_001_pkg .cs",
+              "ToolTip": "C:\\Users\\ti_davi\\source\\repos\\SDD_Api\\SDD_Api\\Infrastructure\\Procedures\\chradm_001_pkg .cs",
+              "RelativeToolTip": "SDD_Api\\Infrastructure\\Procedures\\chradm_001_pkg .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T11:27:11.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SDD_Controller.cs",
+              "DocumentMoniker": "C:\\Users\\ti_davi\\source\\repos\\SDD_Api\\SDD_Api\\Controllers\\SDD_Controller.cs",
+              "RelativeDocumentMoniker": "SDD_Api\\Controllers\\SDD_Controller.cs",
+              "ToolTip": "C:\\Users\\ti_davi\\source\\repos\\SDD_Api\\SDD_Api\\Controllers\\SDD_Controller.cs",
+              "RelativeToolTip": "SDD_Api\\Controllers\\SDD_Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T11:48:18.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "chradm_001_model.cs",
+              "DocumentMoniker": "C:\\Users\\ti_davi\\source\\repos\\SDD_Api\\SDD_Api\\Models\\chradm_001_model.cs",
+              "RelativeDocumentMoniker": "SDD_Api\\Models\\chradm_001_model.cs",
+              "ToolTip": "C:\\Users\\ti_davi\\source\\repos\\SDD_Api\\SDD_Api\\Models\\chradm_001_model.cs",
+              "RelativeToolTip": "SDD_Api\\Models\\chradm_001_model.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T12:07:56.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "chradm_001_service.cs",
+              "DocumentMoniker": "C:\\Users\\ti_davi\\source\\repos\\SDD_Api\\SDD_Api\\Service\\chradm_001_service.cs",
+              "RelativeDocumentMoniker": "SDD_Api\\Service\\chradm_001_service.cs",
+              "ToolTip": "C:\\Users\\ti_davi\\source\\repos\\SDD_Api\\SDD_Api\\Service\\chradm_001_service.cs",
+              "RelativeToolTip": "SDD_Api\\Service\\chradm_001_service.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T11:44:51.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ti_davi\\source\\repos\\SDD_Api\\SDD_Api\\appsettings.json",
+              "RelativeDocumentMoniker": "SDD_Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\ti_davi\\source\\repos\\SDD_Api\\SDD_Api\\appsettings.json",
+              "RelativeToolTip": "SDD_Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-09T11:27:26.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConnectionDB.cs",
+              "DocumentMoniker": "C:\\Users\\ti_davi\\source\\repos\\SDD_Api\\SDD_Api\\Infrastructure\\DBAccess\\ConnectionDB.cs",
+              "RelativeDocumentMoniker": "SDD_Api\\Infrastructure\\DBAccess\\ConnectionDB.cs",
+              "ToolTip": "C:\\Users\\ti_davi\\source\\repos\\SDD_Api\\SDD_Api\\Infrastructure\\DBAccess\\ConnectionDB.cs",
+              "RelativeToolTip": "SDD_Api\\Infrastructure\\DBAccess\\ConnectionDB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T11:25:29.795Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
