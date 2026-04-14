@@ -2,6 +2,17 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("SDD_Frontend", policy =>
+        policy.WithOrigins(
+            "http://localhost:3000",
+            "https://sdd.chriscintos.com.br"
+        )
+        .AllowAnyMethod()
+        .AllowAnyHeader());
+});
+
 builder.Services.AddControllers();
 
 builder.Services.AddSingleton<SDD_Api.Infrastructure.DBAccess.ConnectionDB>();
@@ -21,6 +32,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("SDD_Frontend");
 
 app.UseAuthorization();
 
