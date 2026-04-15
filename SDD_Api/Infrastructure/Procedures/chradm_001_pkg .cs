@@ -13,31 +13,47 @@ namespace SDD_Api.Infrastructure.Procedures
 
         public chradm_001_pkg(ConnectionDB db) => _db = db ?? throw new ArgumentNullException(nameof(db));
 
-        public async Task<ApiResponse<chradm_001_model.Consulta_Produto>> Consulta_ProdutoAsync(string? pCodProduto)
+        public async Task<ApiResponse<List<chradm_001_model.Consulta_Produto>>> Consulta_ProdutoAsync(string? pCodProduto)
         {
             var parameters = new[]
             {
                 OracleDbHelper.Input ("P_Cod_Produto", OracleDbType.Varchar2, pCodProduto),
-                OracleDbHelper.Output("P_Descricao",   OracleDbType.Varchar2, 500),
+                OracleDbHelper.Cursor("P_Cursor"),
                 OracleDbHelper.Output("P_Erro_Num",    OracleDbType.Decimal),
                 OracleDbHelper.Output("P_Erro_Des",    OracleDbType.Varchar2, 500)
             };
 
+            var lista   = new List<chradm_001_model.Consulta_Produto>();
             var erroNum = 0;
             var erroDes = "";
-            var result  = new chradm_001_model.Consulta_Produto();
 
-            await _db.ExecuteProcWithOutputsAsync($"{PKG}.CONSULTA_PRODUTO", parameters, outputs =>
-            {
-                result.Descricao = OracleDbHelper.GetString(outputs[1]);
-                erroNum          = OracleDbHelper.GetInt   (outputs[2]);
-                erroDes          = OracleDbHelper.GetString(outputs[3]);
-            });
+            await _db.ExecuteProcWithCursorAndOutputsAsync($"{PKG}.CONSULTA_PRODUTO", parameters,
+                reader =>
+                {
+                    int colCodigo    = reader.GetOrdinal("CODIGO");
+                    int colDescricao = reader.GetOrdinal("DESCRICAO");
+
+                    while (reader.Read())
+                    {
+                        chradm_001_model.Consulta_Produto lt_produto = new chradm_001_model.Consulta_Produto();
+                        {
+                            lt_produto.Codigo = reader.IsDBNull(colCodigo) ? "" : reader.GetString(colCodigo);
+                            lt_produto.Descricao = reader.IsDBNull(colDescricao) ? "" : reader.GetString(colDescricao);
+
+                            lista.Add(lt_produto);
+                        }
+                    }
+                },
+                outputs =>
+                {
+                    erroNum = OracleDbHelper.GetInt   (outputs[2]);
+                    erroDes = OracleDbHelper.GetString(outputs[3]);
+                });
 
             if (erroNum != 0)
-                return ApiResponse<chradm_001_model.Consulta_Produto>.FromError(erroNum, erroDes);
+                return ApiResponse<List<chradm_001_model.Consulta_Produto>>.FromError(erroNum, erroDes);
 
-            return ApiResponse<chradm_001_model.Consulta_Produto>.Ok(result);
+            return ApiResponse<List<chradm_001_model.Consulta_Produto>>.Ok(lista);
         }
 
         public async Task<ApiResponse<chradm_001_model.Valida_Rastreabilidade>> Valida_RastreabilidadeAsync(string? pCodProduto, string? pNrRastrea)
@@ -46,7 +62,7 @@ namespace SDD_Api.Infrastructure.Procedures
             {
                 OracleDbHelper.Input ("P_Cod_Produto", OracleDbType.Varchar2, pCodProduto),
                 OracleDbHelper.Input ("P_Nr_Rastrea",  OracleDbType.Varchar2, pNrRastrea),
-                OracleDbHelper.Output("P_Cont",        OracleDbType.Decimal),
+                OracleDbHelper.Output("P_Data",        OracleDbType.Date),
                 OracleDbHelper.Output("P_Erro_Num",    OracleDbType.Decimal),
                 OracleDbHelper.Output("P_Erro_Des",    OracleDbType.Varchar2, 500)
             };
@@ -57,9 +73,9 @@ namespace SDD_Api.Infrastructure.Procedures
 
             await _db.ExecuteProcWithOutputsAsync($"{PKG}.VALIDA_RASTREABILIDADE", parameters, outputs =>
             {
-                result.Cont = OracleDbHelper.GetDecimal(outputs[2]);
-                erroNum     = OracleDbHelper.GetInt    (outputs[3]);
-                erroDes     = OracleDbHelper.GetString (outputs[4]);
+                result.Data = OracleDbHelper.GetDate(outputs[2]);
+                erroNum     = OracleDbHelper.GetInt   (outputs[3]);
+                erroDes     = OracleDbHelper.GetString(outputs[4]);
             });
 
             if (erroNum != 0)

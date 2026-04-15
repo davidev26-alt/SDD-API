@@ -4,12 +4,13 @@
     {
         public class Consulta_Produto
         {
+            public string? Codigo    { get; set; }
             public string? Descricao { get; set; }
         }
 
         public class Valida_Rastreabilidade
         {
-            public decimal Cont { get; set; }
+            public DateTime? Data { get; set; }
         }
 
         public class Consulta_Rastreabilidade

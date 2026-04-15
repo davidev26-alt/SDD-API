@@ -185,5 +185,9 @@ namespace SDD_Api.Infrastructure.DBAccess
 
         public static string GetString(OracleParameter p) =>
             p.Value is OracleString s && !s.IsNull ? s.Value : "";
+
+
+        public static DateTime? GetDate(OracleParameter p) =>
+            p.Value is OracleDate d && !d.IsNull ? d.Value : null;
     }
 }

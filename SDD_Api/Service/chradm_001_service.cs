@@ -10,7 +10,7 @@ namespace SDD_Api.Service
 
         public chradm_001_service(chradm_001_pkg processopkg) => _processopkg = processopkg ?? throw new ArgumentNullException(nameof(processopkg));
 
-        public async Task<ApiResponse<chradm_001_model.Consulta_Produto>> Consulta_ProdutoAsync(string? pCodProduto)
+        public async Task<ApiResponse<List<chradm_001_model.Consulta_Produto>>> Consulta_ProdutoAsync(string? pCodProduto)
         {
             return await _processopkg.Consulta_ProdutoAsync(pCodProduto);
         }
